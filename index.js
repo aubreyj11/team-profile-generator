@@ -4,58 +4,13 @@ const Employee = require('./lib/employee');
 const Manager = require('./lib/manager');
 const Intern = require('./lib/intern');
 const Engineer = require('./lib/engineer');
+const html = require('./templates/testhtml.js')
+const util = require("util");
 
 
+// const writeFile = util.promisify(fs.writeFile);
 let cardInfo = ``;
 let team = [];
-
-const html = function(cardInfo) {
-   return ` <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=auto, initial-scale=1.0">
-    <link rel="stylesheet" href="./Develop/style.css">
-    <title>Team Profile Generator</title>
-</head>
-<body>
-    <nav class="nav-bg">
-        <h1>My Team's Profile</h1>
-    </nav>
-    
-    ${cardInfo}
-
-</body>
-</html>`
-};
-
-const createCard = function(Employee) {
-    var titleInfo;
-
-    if (Employee.role === 'Manager') {
-        titleInfo = `Office Number: ${Manager.officeNum}`
-    } else if (Employee.role === 'Intern') {
-        titleInfo = `School: ${Intern.school}`
-    } else if (Employee.role === 'Engineer') {
-        titleInfo = `Github: ${Engineer.github}`;
-    }
-
-    return `<div class="card">
-    <div class="card-header">
-        <h2>${Employee.name}</h2>  
-        <h2>${Employee.title}</h2>
-        <hr>
-    </div>
-    <div class="card-body">
-        <ul>
-            <li>ID: ${Employee.id}</li>
-            <li>Email: ${Employee.email}</li>
-            <li>${titleInfo} </li>
-        </ul>
-    </div>
-    </div>`
-};
 
 async function generate() {
     try {
@@ -64,12 +19,18 @@ async function generate() {
         for (let i = 0; i < team.length; i++) {
             cardInfo = cardInfo + html.createCard(team[i]);
         }
+
+        let htmlOutput = html.htmlTemplate(cardInfo);
+
+        fs.writeFile('index.html', htmlOutput, (err) =>
+    err ? console.log(err) : console.log("Success!"));
     } catch (err) {
         console.log(err);
     }
 
-    fs.writeFile('index.html', html(cardInfo), (err) =>
-    err ? console.log(err) : console.log("Success!"));
+    
+
+    
 };
 
 
@@ -110,7 +71,7 @@ async function givePrompt() {
                 finishedResponse2 = await inquirer.prompt([{
                     type: 'input',
                     name: 'addedInfo',
-                    message: "What is the employee's GitHub username?",
+                    message: "What is the employee's office number?",
                 }, ]);
 
                 const manager = new Manager(response.name, response.id, response.email, finishedResponse2.addedInfo);
