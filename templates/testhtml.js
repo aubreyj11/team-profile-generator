@@ -24,23 +24,22 @@ const createCard = function(emp) {
     var titleInfo;
 
     if (emp.role === 'Manager') {
-        titleInfo = `Office Number: ${Manager.officeNum}`
+        titleInfo = `Office Number: ${emp.officeNum}`
     } else if (emp.role === 'Intern') {
-        titleInfo = `School: ${Intern.school}`
+        titleInfo = `School: ${emp.school}`
     } else if (emp.role === 'Engineer') {
-        titleInfo = `Github: ${Engineer.github}`;
+        titleInfo = `Github: <a href='https://github.com/${emp.github}'>${emp.github}</a>`;
     }
 
     return `<div class="card">
     <div class="card-header">
-        <h2>${Employee.name}</h2>  
-        <h2>${Employee.title}</h2>
-        <hr>
+        <h2>${emp.name}</h2>  
+        <h2>${emp.role}</h2>
     </div>
     <div class="card-body">
-        <ul>
-            <li>ID: ${Employee.id}</li>
-            <li>Email: ${Employee.email}</li>
+        <ul class="list">
+            <li>ID: ${emp.id}</li>
+            <li>Email: <a href='mailto:${emp.email}'>${emp.email}</a></li>
             <li>${titleInfo} </li>
         </ul>
     </div>

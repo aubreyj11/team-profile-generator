@@ -5,10 +5,10 @@ const Manager = require('./lib/manager');
 const Intern = require('./lib/intern');
 const Engineer = require('./lib/engineer');
 const html = require('./templates/testhtml.js')
-const util = require("util");
 
 
-// const writeFile = util.promisify(fs.writeFile);
+
+
 let cardInfo = ``;
 let team = [];
 
