@@ -1,19 +1,25 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(179, 221, 195);
+}
 .nav-bg {
     text-align: center;
-    background-color: rgb(129, 205, 172);
+    background-color: rgb(80, 128, 107);
     padding: 15px;
-    font-size: 25px;
+    font-size: 30px;
+    color:rgba(245, 245, 245, 0.769);
 }
 
 .cardContainer {
-    width: 400px;
+    /* width: 500px; */
     padding: 20px;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .card-header {
     padding: 10px;
-
+    
 }
 
 .card-body{
@@ -33,11 +39,28 @@
     margin: 30px;
     color: rgba(245, 245, 245, 0.769);
     text-align: center;
-    align-items: space-between;
     flex-direction: row;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 350px;
+   
 }
 
 li {
     padding: 5px;
+}
+
+a:link, a:visited {
+    color:rgb(134, 160, 142);
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.name {
+    font-size: 25px;
+}
+
+.role {
+    font-size: 20px;
 }

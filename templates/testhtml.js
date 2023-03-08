@@ -10,7 +10,7 @@ const htmlTemplate = function (cardInfo) {
     </head>
     <body>
         <nav class="nav-bg">
-            <h1>My Team's Profile</h1>
+            <h1>My Team Profile</h1>
         </nav>
         <div class="cardContainer">
             ${cardInfo}
@@ -28,13 +28,14 @@ const createCard = function(emp) {
     } else if (emp.role === 'Intern') {
         titleInfo = `School: ${emp.school}`
     } else if (emp.role === 'Engineer') {
-        titleInfo = `Github: <a href='https://github.com/${emp.github}'>${emp.github}</a>`;
+        titleInfo = `Github: <a href='https://github.com/${emp.github}' target="_blank">${emp.github}</a>`;
     }
 
-    return `<div class="card">
+    return `
+    <div class="card">
     <div class="card-header">
-        <h2>${emp.name}</h2>  
-        <h2>${emp.role}</h2>
+        <h2 class='name'>${emp.name}</h2>  
+        <h2 class='role'>${emp.role}</h2>
     </div>
     <div class="card-body">
         <ul class="list">
