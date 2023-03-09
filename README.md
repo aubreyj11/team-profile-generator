@@ -38,7 +38,8 @@ When adding a manager, users will be able to input their office number. If the e
 ## Examples of Functionality
 <br>
 
-Watch the demo of how to use this application here: [walkthroughDemo.webm](https://user-images.githubusercontent.com/116928146/224126652-55a1b702-4dc2-4e66-adc9-12e567568b72.webm)
+Watch the demo of how to use this application here: [walkthroughDemo.webm](https://user-images.githubusercontent.com/116928146/224135914-fa3da461-9efd-4e04-ad9a-3af3ec214f28.webm)
+
 <br><br>
 
 Watch the Jest tests walkthrough here: [testDemo.webm](https://user-images.githubusercontent.com/116928146/224130525-91f69085-07ae-4d9d-8ee1-90f5b21c8c58.webm)
