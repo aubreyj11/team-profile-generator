@@ -29,9 +29,11 @@ No installation required. Just visit the deployed website link:
 <br>
 
 ## Usage
-In order to use this program, clone the code from the repo and make sure to install node and inquirer v8.2.4. Open the integrated terminal in the index.js file and run 'node index.js'. Questions will begin to appear in the terminal and, after providing information, the code will generate an html page with all of that inputted information. 
+In order to use this program, clone the code from the repo and make sure to install node and inquirer v8.2.4. Open the integrated terminal in the index.js file and run 'node index.js'. Questions will begin to appear in the terminal and, after providing information, the code will generate an html page with all of that inputted information.
+
+When adding a manager, users will be able to input the office number. If the employee is an Intern, they can input the school they go to, and lastly, if the employee is an engineer, they can input that engineer's GitHub username which will output a link to that person's GitHub page.
 
 <br><br><br>
-![alt text](assets/images/readMePhoto.png)
+![alt text](media/walkthroughDemo.webm)
 
 <br>
