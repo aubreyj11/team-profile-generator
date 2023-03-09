@@ -33,5 +33,6 @@ In order to use this program, clone the code from the repo and make sure to inst
 
 <br><br><br>
 ![alt text](assets/images/readMePhoto.png)
+[Untitled_ Mar 9, 2023 10_45 AM.webm](https://user-images.githubusercontent.com/116928146/224126403-539b469d-ec71-4209-ba51-717bfce681ba.webm)
 
 <br>
