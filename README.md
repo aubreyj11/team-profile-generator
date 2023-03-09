@@ -34,6 +34,8 @@ In order to use this program, clone the code from the repo and make sure to inst
 When adding a manager, users will be able to input the office number. If the employee is an Intern, they can input the school they go to, and lastly, if the employee is an engineer, they can input that engineer's GitHub username which will output a link to that person's GitHub page.
 
 <br><br><br>
-![alt text](media/walkthroughDemo.webm)
+[walkthroughDemo.webm](https://user-images.githubusercontent.com/116928146/224126652-55a1b702-4dc2-4e66-adc9-12e567568b72.webm)
+[testDemo.webm](https://user-images.githubusercontent.com/116928146/224130525-91f69085-07ae-4d9d-8ee1-90f5b21c8c58.webm)
+
 
 <br>
