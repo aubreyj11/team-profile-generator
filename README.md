@@ -32,7 +32,7 @@ No installation required. Just visit the deployed website link:
 In order to use this program, clone the code from the repo and make sure to install node and inquirer v8.2.4. Open the integrated terminal in the index.js file and run 'node index.js'. Questions will begin to appear in the terminal and, after providing information, the code will generate an html page with all of that inputted information. 
 
 <br><br><br>
-![alt text](assets/images/readMePhoto.png)
-[Untitled_ Mar 9, 2023 10_45 AM.webm](https://user-images.githubusercontent.com/116928146/224126403-539b469d-ec71-4209-ba51-717bfce681ba.webm)
+[walkthroughDemo.webm](https://user-images.githubusercontent.com/116928146/224126652-55a1b702-4dc2-4e66-adc9-12e567568b72.webm)
+
 
 <br>
