@@ -7,7 +7,7 @@ body{
     background-color: rgb(80, 128, 107);
     padding: 15px;
     font-size: 30px;
-    color:rgba(245, 245, 245, 0.769);
+    color:rgba(255, 255, 255, 0.894);
 }
 
 .cardContainer {
@@ -42,7 +42,8 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     width: 350px;
-   
+    box-shadow: 5px 8px rgb(85, 97, 88);
+
 }
 
 li {

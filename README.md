@@ -9,6 +9,7 @@
     <li>Javascript</li>
     <li>Node.js</li>
     <li>Inquirer</li>
+    <li>Jest</li>
 </ul>    
 
 <br>
